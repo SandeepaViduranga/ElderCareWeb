@@ -21,6 +21,7 @@ if (isset($_POST['doctor_Update_Status'])) {
 
     $stmt1 = $conn->prepare("UPDATE doctor SET doc_status ='1' WHERE nic = \"" . $Doc_ID . "\";");
     $stmt1->execute();
+    //Done
 }
 
 ?>
