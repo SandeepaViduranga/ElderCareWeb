@@ -1,6 +1,5 @@
 <?php
 require 'dbconnect.php';
-date_default_timezone_set("Asia/Colombo");
 
 if(isset($_POST['admin_login'])){
     //name email nic address mobile mbbsid Password
