@@ -20,6 +20,8 @@ function Elders_Health_records() {
             $('#Elders_health_records').append('<tr><td>' + result.first_name + '</td><td>' + result.age + '</td><td>' + result.sugar_level + '</td><td>' + result.pressure_level + '</td><td>' + result.body_temp + '</td><td>' + result.BMI + '</td><td>' + result.input_date + '</td>'+ updateBtn(result.nic) +'</tr>');
         })
         $('#Elders_health_records').append('</tbody>');
+
+        document.getElementById("dashboardRecordDate").textContent = "Records For Date : " .concat(result[0].input_date);
     });
 }
 
@@ -94,6 +96,56 @@ function getElderRecord(elderNiC, sugarLevel, pressureLevel, bodyTemp, BMI) {
     });
 }
 
+function loadRiskCount(){
+    var AID = getAdminID();
+    $.ajax({
+        url: "PHP/admin_elder_records.php",
+        method: "post",
+        data: "loadRiskCount=" + AID,
+    }).done(function (result) {
+        console.log(result);
+        result = JSON.parse(result);
+        console.log(result);
+
+        var count = result[0].riskCount;
+        console.log(count);
+        document.getElementById("riskLevel").textContent = count;
+    });
+}
+
+function goodHealth(){
+    var AID = getAdminID();
+    $.ajax({
+        url: "PHP/admin_elder_records.php",
+        method: "post",
+        data: "goodHealth=" + AID,
+    }).done(function (result) {
+        console.log(result);
+        result = JSON.parse(result);
+        console.log(result);
+
+        var count = result[0].goodCount;
+        console.log(count);
+        document.getElementById("goodHealth").textContent = count;
+    });
+}
+
+function totalAdults(){
+    var AID = getAdminID();
+    $.ajax({
+        url: "PHP/admin_elder_records.php",
+        method: "post",
+        data: "totalAdults=" + AID,
+    }).done(function (result) {
+        console.log(result);
+        result = JSON.parse(result);
+        console.log(result);
+
+        var count = result[0].adultCount;
+        console.log(count);
+        document.getElementById("totalAdults").textContent = count;
+    });
+}
 function getElder_ID() {
     return localStorage.getItem("DID");
 }

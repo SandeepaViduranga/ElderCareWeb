@@ -14,8 +14,8 @@
 
     }
 
-    if(isset($_POST['DocID'])) {
-        $Doc_ID = $_POST['DocID'];
+    if(isset($_POST['doctor_Update'])) {
+        $Doc_ID = $_POST['doctor_Update'];
         $db = new DbConnect;
         $conn = $db->connect();
 

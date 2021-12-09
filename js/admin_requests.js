@@ -33,25 +33,26 @@ function Admin_req() {
     });
 }
 
+function updateBtn(str) {
+    var temp = "";
+    console.log(str);
+    if (str != "0") {
+        temp = '<td><a href="/ElderCareWeb/admin_notifications.html?recID='+str+'" ><button type="button" onclick="getDocID()" class="btn btn-sm btn-gradient-success">Approve</button></a></td>';
+    }
+    return temp;
+}
+
 function doctor_Update(Doc_ID) {
     //var Elder_ID = getElder_ID();
     console.log(Doc_ID);
     $.ajax({
         url: "PHP/admin_requests.php",
         method: "post",
-        data: "DocID=" + Doc_ID
+        data: "doctor_Update=" + Doc_ID
     }).done(function () {
         alert("Doctor Approved Successfully!!");
-        location.href = "\admin_notifications.html";
+        Admin_req();
     });
-}
-
-function updateBtn(str) {
-    var temp = "";
-    if (str != "0") {
-        temp = '<td><a href="/eldercare/admin_notifications.html?recID='+str+'" ><button type="button" onclick="getDocID()" class="btn btn-sm btn-gradient-success">Approve</button></a></td>';
-    }
-    return temp;
 }
 
 function getAdminID() {
