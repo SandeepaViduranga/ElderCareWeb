@@ -98,7 +98,7 @@
                   <div class="card-body">
                     <h4>Add Adult's Health Records</h4>
                     <h6 class="font-weight-light">It only takes few steps</h6>
-                    <form class="pt-3">
+                    <form class="pt-3" action="PHP/upload.php" method="POST">
                       <div class="row">
                         <div class="col-sm">
                           <div class="form-group">
@@ -109,31 +109,31 @@
                       <div class="row">
                         <div class="col-sm">
                           <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" id="sugLevel" name="sugar_level" placeholder="Sugar Level" required>
+                            <input type="text" class="form-control form-control-lg" id="sugar_level" name="sugar_level" placeholder="Sugar Level" required>
                           </div>
                         </div>
                         <div class="col-sm">
                           <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" id="preLevel" name="pressure_level" placeholder="Pressure Level" required>
+                            <input type="text" class="form-control form-control-lg" id="pressure_level" name="pressure_level" placeholder="Pressure Level" required>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-sm">
                           <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" id="bodyTemp" name="body_temp" placeholder="Body Tempurature" required>
+                            <input type="text" class="form-control form-control-lg" id="body_temp" name="body_temp" placeholder="Body Tempurature" required>
                           </div>
                         </div>
                         <div class="col-sm">
                           <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" id="bmi" name="BMI" placeholder="BMI" required>
+                            <input type="text" class="form-control form-control-lg" id="BMI" name="BMI" placeholder="BMI" required>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-sm">
                           <div class="mt-3">
-                            <button type="submit" name="add_health_records" onclick=addElderRecord() class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">Add adults health records</button>
+                            <button type="submit" name="add_health_records" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">Add adults health records</button>
                           </div>
                         </div>
                       </div>
@@ -179,17 +179,7 @@
         console.log(adultNIC);
         document.getElementById("Adultnic").value = adultNIC;
       });
-
-      function addElderRecord() {
-        //var elderNiC = document.getElementById('elderNIC').value;
-        var elderNiC = document.getElementById('Adultnic').value;
-        var sugarLevel = document.getElementById('sugLevel').value;
-        var pressureLevel = document.getElementById('preLevel').value;
-        var bodyTemp = document.getElementById('bodyTemp').value;
-        var BMI = document.getElementById('bmi').value;
-
-        getElderRecord(elderNiC, sugarLevel, pressureLevel, bodyTemp, BMI);
-      }
+        
     </script>
   </body>
 </html>
