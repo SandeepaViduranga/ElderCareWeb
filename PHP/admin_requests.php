@@ -1,6 +1,6 @@
 <?php
 require 'dbconnect.php';
-
+date_default_timezone_set("Asia/Colombo");
 if (isset($_POST['Admin_req'])) {
     $Elder_ID = $_POST['Admin_req'];
     $db = new DbConnect;
