@@ -28,7 +28,7 @@ function Elders_Health_records() {
 function updateBtn(str) {
         var temp = "";
         if (str != "0") {
-          temp = '<td><a href="/eldercare/admin_update.html?recID='+str+'"><button type="button" class="btn btn-sm btn-gradient-success">Update</button></a></td>';
+          temp = '<td><a href="/ElderCareWeb/admin_update.html?recID='+str+'"><button type="button" class="btn btn-sm btn-gradient-success">Update</button></a></td>';
         }
         return temp;
 }
@@ -62,7 +62,11 @@ function Elders_Update_records(elderNIC) {
         $('#personal_data').append("<thead></thead><tr><th>Record Date</th><th>Sugar Level (mg/dL)</th><th>Pressure Level (SBP)</th><th>Body Temp.( °C )</th><th>BMI</th></tr></thead><tbody>");
 
         result.forEach(function (result) {
-            $('#personal_data').append('<tr><td>' + result.input_date + '</td><td>' + result.sugar_level + '</td><td>' + result.pressure_level + '</td><td>' + result.body_temp + '</td><td>' + result.BMI + '</td></tr>');
+            if(result.record_status === "1") {
+                $('#personal_data').append('<tr style="background-color: #ffe4e4;"><td>' + result.input_date + '</td><td>' + result.sugar_level + '</td><td>' + result.pressure_level + '</td><td>' + result.body_temp + '</td><td>' + result.BMI + '</td></tr>');
+            }else{
+                $('#personal_data').append('<tr><td>' + result.input_date + '</td><td>' + result.sugar_level + '</td><td>' + result.pressure_level + '</td><td>' + result.body_temp + '</td><td>' + result.BMI + '</td></tr>');
+            }
         })
         $('#personal_data').append('</tbody>');
     });

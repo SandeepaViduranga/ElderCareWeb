@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,186 +16,164 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
-  </head>
-  <body>
-    <div class="container-scroller">
-      <!-- partial:../../partials/_navbar.html -->
-      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <link rel="shortcut icon" href="assets/images/favicon.png"/>
+</head>
+<body>
+<div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.png" alt="logo" /></a>
+            <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.png"
+                                                                           alt="logo"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-menu"></span>
-          </button>
-          <ul class="navbar-nav navbar-nav-right">          
-            <li class="nav-item d-none d-lg-block full-screen-link">
-              <a class="nav-link">
-                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
-              </a>
-            </li>
-            <li class="nav-item nav-logout d-none d-lg-block">
-              <a class="nav-link" href="admin_login.html">
-                <i class="mdi mdi-power"></i>
-              </a>
-            </li>
-          </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-            <span class="mdi mdi-menu"></span>
-          </button>
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item d-none d-lg-block full-screen-link">
+                    <a class="nav-link">
+                        <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-logout d-none d-lg-block">
+                    <a class="nav-link" href="admin_login.html">
+                        <i class="mdi mdi-power"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+            </button>
         </div>
-      </nav>
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-            <li class="nav-item nav-profile">
-              <a href="#" class="nav-link">
-                <div class="nav-profile-image">
-                  <img src="assets/images/faces/face3.jpg" alt="profile">
-                  <span class="login-status online"></span>
-                  <!--change to offline or busy as needed-->
-                </div>
-                <div class="nav-profile-text d-flex flex-column">
-                  <span id="adminUsername" class="font-weight-bold mb-2">Admin</span>
-                </div>
-                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Admin Section</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="admin_add_new.html">Add new</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="admin_health_records.html">Health Records</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="admin_notifications.html">Notifications</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+            <ul class="nav">
+                <li class="nav-item nav-profile">
+                    <a href="#" class="nav-link">
+                        <div class="nav-profile-image">
+                            <img src="assets/images/faces/face3.jpg" alt="profile">
+                            <span class="login-status online"></span>
+                            <!--change to offline or busy as needed-->
+                        </div>
+                        <div class="nav-profile-text d-flex flex-column">
+                            <span id="adminUsername" class="font-weight-bold mb-2">Admin</span>
+                        </div>
+                        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                       aria-controls="ui-basic">
+                        <span class="menu-title">Admin Section</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="admin_add_new.html">Add new</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admin_health_records.html">Health Records</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="admin_notifications.html">Notifications</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title" id="userName">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title" id="userName">
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>
                 </span>
-                Warning
-              </h3>
-            </div>
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h1 style="text-align: center;" class="card-title">Are you sure you want to accept this doctor? This acton can't be undo</h1>
-                    <div class="row">
-                      <div class="col-sm">
-                        <div class="mt-3">
-                          <a class="btn btn-block btn-gradient-primary btn btn-gradient-danger btn-fw" href="admin_health_records.html">Cancel</a>
-                        </div>
-                      </div>
-                      <div class="col-sm">
-                        <div class="mt-3">
-                          <!--name="Update_health_records"-->
-                          <button type="button"  onclick="addelderRecord()" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">Yes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        Warning
+                    </h3>
                 </div>
-              </div>
+                <div class="row">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 style="text-align: center;" class="card-title">Are you sure you want to accept this
+                                    doctor? This action can't be undo!</h1>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="mt-3">
+                                            <a class="btn btn-block btn-gradient-primary btn btn-gradient-danger btn-fw"
+                                               href="admin_notifications.html">Cancel</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="mt-3">
+                                            <!--name="Update_health_records"-->
+                                            <button type="button" onclick="updateDoctorStatus()" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                                                Yes
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
-            </div>
-          </footer>
-          <!-- partial -->
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a
+                            href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                            class="mdi mdi-heart text-danger"></i></span>
+                </div>
+            </footer>
+            <!-- partial -->
         </div>
         <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="assets/js/chart.js"></script>
-    <!-- End custom js for this page -->
-    <script language="javascript" src="js/admin_elder_records.js"></script>
-    <script language="javascript">
-      $(document).ready(function () {
-        //get elderid
-          var url_string = window.location.href
-          var url = new URL(url_string);
-          var c = url.searchParams.get("recID");
-          window.eNIC = c;
-          console.log(c);
-        //Set admin name
-        /*var userName = getAdminUserName();
-        const myArr = userName.split("@");
-        var name = myArr[0];
-        document.getElementById("adminUsername").textContent = name;*/
-
-        //Fetching elder record data
-        Elders_Update_records(c);
-
-      });
-    </script>
-    <!--download script-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
-    <script type="text/javascript"
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="assets/vendors/chart.js/Chart.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="assets/js/off-canvas.js"></script>
+<script src="assets/js/hoverable-collapse.js"></script>
+<script src="assets/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="assets/js/chart.js"></script>
+<!-- End custom js for this page -->
+<!--download script-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+<script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-    <script type="text/javascript">
-      function Export() {
-          html2canvas(document.getElementById('personal_data'), {
-              onrendered: function (canvas) {
-                  var data = canvas.toDataURL();
-                  var docDefinition = {
-                      content: [{
-                          image: data,
-                          width: 500
-                      }]
-                  };
-                  pdfMake.createPdf(docDefinition).download("Table.pdf");
-              }
-          });
-      }
-  </script>
-    <script>
-      function addelderRecord(){
-        //var elderNiC = document.getElementById('elderNIC').value;
-        var elderNiC = window.eNIC;
-        var sugarLevel = document.getElementById('upsugar_level').value;
-        var pressureLevel = document.getElementById('uppressure_level').value;
-        var bodyTemp = document.getElementById('upbody_temp').value;
-        var BMI = document.getElementById('upBMI').value;
+<script language="javascript" src="js/admin_requests.js"></script>
+<script language="javascript">
+    $(document).ready(function () {
+        var url_string = location.href
+        var url = new URL(url_string);
+        var docID = url.searchParams.get("docNIC");
+        console.log(docID);
+        localStorage.setItem("docNIC", docID);
+    });
 
-        getElderRecord(elderNiC, sugarLevel, pressureLevel, bodyTemp, BMI);
-
-      }
-    </script>
-  </body>
+    function updateDoctorStatus(){
+        var docID = localStorage.getItem("docNIC");
+        console.log(docID);
+        doctor_Update_Status(docID);
+    }
+</script>
+</body>
 </html>

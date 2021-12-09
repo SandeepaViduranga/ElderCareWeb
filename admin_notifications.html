@@ -214,21 +214,6 @@
         document.getElementById("userName").textContent = name;*/
         Admin_req();
       });
-
-      function getDocID(){
-        var url_string = location.href
-        var url = new URL(url_string);
-        var docID = url.searchParams.get("recID");
-        console.log(docID);
-        doctor_Update(docID);
-        //Set admin name
-        /*var userName = getAdminUserName();
-        const myArr = userName.split("@");
-        var name = myArr[0];
-        document.getElementById("adminUsername").textContent = name;
-        //Fetching elder record data
-        Elders_Update_records(c);*/
-      }
   </script>
 
   </body>
